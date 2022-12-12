@@ -1,0 +1,97 @@
+.wa__sidebar {
+  min-height: 100%;
+  width: max-content;
+
+  color: var(--color-primary);
+
+  background-image: url(../../assets/Cloud-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 120px;
+  background-size: 600px;
+  background-color: var(--color-card-bg);
+
+  font-family: var(--font-family);
+}
+
+.wa__sidebar-filter {
+  padding: 32px 96px;
+  min-height: 100%;
+  width: 100%;
+
+  background-color: rgba(8, 15, 46, 0.7);
+}
+
+.wa__sidebar-input {
+  margin-left: -48px;
+}
+
+.wa__sidebar-input input {
+  background-color: #6e707a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  outline: none;
+  text-align: center;
+}
+
+.wa__sidebar-input input::placeholder {
+  color: var(--color-primary);
+}
+
+.wa__sidebar-icon {
+  width: 100%;
+  text-align: center;
+
+  margin-top: 76px;
+}
+
+.wa__sidebar-icon img {
+  width: 80%;
+  margin: auto;
+}
+
+.wa__sidebar-container {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 64px;
+  text-align: center;
+}
+
+.wa__sidebar-container-weather p:first-child {
+  font-weight: 500;
+  font-size: 144px;
+  line-height: 169px;
+}
+
+.wa__sidebar-container-weather p:nth-child(2) {
+  margin-top: 48px;
+
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: var(--color-secondary);
+}
+
+.wa__sidebar-container-date {
+  margin-top: 64px;
+}
+
+.wa__sidebar-container-date {
+  color: var(--color-secondary);
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.wa__sidebar-container-location {
+  margin-top: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  color: var(--color-secondary);
+}
