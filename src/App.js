@@ -1,7 +1,8 @@
+import Sidebar from './components/sidebar/Sidebar';
+import './App.css';
+
 function App() {
-  return (
-    <h1>Hello from App</h1>
-  );
+  return <Sidebar></Sidebar>;
 }
 
 export default App;

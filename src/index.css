@@ -1,1 +1,9 @@
-/* TODO Add site wide styles */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+  --font-family: 'Raleway', sans-serif;
+
+  --color-bg: #100e1d;
+  --color-text: #e7e7eb;
+  --color-card-bg: #1e213a;
+}
