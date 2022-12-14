@@ -1,0 +1,13 @@
+.wa__card {
+  max-width: 135px;
+  /* max-height: 200px; */
+  height: min-content;
+
+  padding: 18px 22px;
+
+  font-family: var(--font-family);
+  color: var(--color-primary);
+  background-color: var(--color-card-bg);
+
+  text-align: center;
+}
