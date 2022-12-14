@@ -1,0 +1,44 @@
+.wa__nextdays {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-items: flex-end;
+  justify-content: center;
+
+  min-height: 35%;
+}
+
+.wa__nextdays-title,
+.wa__nextdays-temp {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1rem;
+}
+
+.wa__nextdays-temp span:last-child {
+  color: #a09fb1;
+  margin-left: 16px;
+}
+
+.wa__nextdays-img {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  max-width: 56px;
+  margin-top: 8px;
+}
+
+.wa__nextdays-img img {
+  display: block;
+  line-height: 0;
+}
+
+.wa__nextdays-temp {
+  margin-top: 30px;
+}
+
+.wa__card:not(:last-child) {
+  margin-right: 25px;
+}

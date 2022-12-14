@@ -59,16 +59,16 @@
 
 .wa__sidebar-container-weather p:first-child {
   font-weight: 500;
-  font-size: 144px;
-  line-height: 169px;
+  font-size: 9rem;
+  line-height: 10.5rem;
 }
 
 .wa__sidebar-container-weather p:nth-child(2) {
   margin-top: 48px;
 
   font-weight: 600;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
 
   color: var(--color-secondary);
 }
@@ -81,8 +81,8 @@
   color: var(--color-secondary);
 
   font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
 }
 
 .wa__sidebar-container-location {
