@@ -1,0 +1,96 @@
+.wa__highlights {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 72px;
+
+  max-width: 800px;
+}
+
+.wa__highlights-text {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.wa__highlights-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.wa__highlights-card {
+  min-width: 328px;
+
+  padding: 22px 100px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.wa__highlights-card-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  font-family: var(--font-family);
+}
+
+.wa__highlights-card-text {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 75px;
+}
+
+.wa__highlights-wind {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Progress bar */
+
+.container {
+  width: 100%;
+  text-align: center;
+  /* position: relative; */
+  margin: 0 auto;
+  margin-top: 8px;
+}
+
+.progress2 {
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.progress-bar2 {
+  height: 18px;
+  border-radius: 30px;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.progress-moved .progress-bar2 {
+  background-color: #f3c623;
+  /* animation: progress 5s infinite; */
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+    background: #f9bcca;
+  }
+
+  100% {
+    width: 100%;
+    background: #f3c623;
+    box-shadow: 0 0 40px #f3c623;
+  }
+}

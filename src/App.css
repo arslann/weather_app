@@ -84,7 +84,7 @@ h6 {
   background-color: var(--color-bg);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 950px) {
   .wa__sidebar-filter {
     padding: 24px 40px;
   }
@@ -108,12 +108,15 @@ h6 {
     flex-wrap: wrap;
   }
 
-  .wa__card:not(:last-child) {
+  .wa__nextdays .wa__card {
     margin-right: 16px;
+  }
+  .wa__card {
+    margin-top: 12px;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 690px) {
   .app {
     flex-direction: column;
   }
@@ -124,6 +127,9 @@ h6 {
 
   .wa__sidebar {
     width: 100%;
+  }
+  .wa__sidebar-filter {
+    padding: 24px 40px;
   }
 
   .wa__sidebar-container-weather p:first-child {
