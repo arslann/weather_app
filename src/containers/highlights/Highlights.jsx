@@ -1,16 +1,22 @@
-import React from 'react';
+import { useContext } from 'react';
+import WeatherContext from '../../context/WeatherContext';
 import { Card } from '../../components';
 import './highlights.css';
 import { FaLocationArrow } from 'react-icons/fa';
 
 function Highlights() {
+  const { weather } = useContext(WeatherContext);
+
   const progressBar = () => {
     return (
       <div class="container">
-      <div class="progress2 progress-moved">
-        <div class="progress-bar2"></div>
+        <div class="progress2 progress-moved">
+          <div
+            class="progress-bar2"
+            style={{ width: weather.current && weather.current.humidity + '%' }}
+          ></div>
+        </div>
       </div>
-    </div>
     );
   };
 
@@ -23,12 +29,12 @@ function Highlights() {
             <span>Wind status</span>
           </div>
           <div className="wa__highlights-card-text">
-            <span>7mph</span>
+            <span>{weather.current && weather.current.wind_kph} kmp</span>
           </div>
 
           <div className="wa__highlights-wind">
             <FaLocationArrow />
-            <span>WSW</span>
+            <span>{weather.current && weather.current.wind_dir}</span>
           </div>
         </Card>
         <Card className="wa__highlights-card">
@@ -36,24 +42,24 @@ function Highlights() {
             <span>Humidity</span>
           </div>
           <div className="wa__highlights-card-text">
-            <span>84%</span>
+            <span>{weather.current && weather.current.humidity} %</span>
           </div>
           {progressBar()}
         </Card>
-        <Card className="wa__highlights-card">
+        <Card className="wa__highlights-card hide">
           <div className="wa__highlights-card-title">
             <span>Visibility</span>
           </div>
           <div className="wa__highlights-card-text">
-            <span>6,4 miles</span>
+            <span>{weather.current && weather.current.vis_km} km</span>
           </div>
         </Card>
-        <Card className="wa__highlights-card">
+        <Card className="wa__highlights-card hide">
           <div className="wa__highlights-card-title">
             <span>Air Pressure</span>
           </div>
           <div className="wa__highlights-card-text">
-            <span>998 mb </span>
+            <span>{weather.current && weather.current.pressure_mb} mb </span>
           </div>
         </Card>
       </div>

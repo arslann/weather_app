@@ -10,31 +10,32 @@
 .wa__highlights-text {
   color: var(--color-primary);
   font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   text-align: left;
   margin-bottom: 32px;
+  margin-left: 16px;
 }
 
 .wa__highlights-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 0 auto;
 }
 
 .wa__highlights-card {
   min-width: 328px;
 
-  padding: 22px 100px;
+  padding: 22px 50px;
   margin-bottom: 48px;
   text-align: center;
 }
 
 .wa__highlights-card-title {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1rem;
+  line-height: 1.2rem;
   /* identical to box height */
 
   text-align: center;
@@ -44,8 +45,8 @@
 .wa__highlights-card-text {
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: 48px;
-  line-height: 75px;
+  font-size: 3rem;
+  line-height: 4.6rem;
 }
 
 .wa__highlights-wind {
@@ -74,7 +75,8 @@
   height: 18px;
   border-radius: 30px;
   transition: 0.4s linear;
-  transition-property: width, background-color;
+  transition-property: width;
+  /* width: 54%; */
 }
 
 .progress-moved .progress-bar2 {
@@ -92,5 +94,26 @@
     width: 100%;
     background: #f3c623;
     box-shadow: 0 0 40px #f3c623;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .wa__highlights-container {
+    flex-direction: column;
+  }
+
+  .wa__highlights-text {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+
+  .wa__highlights-card-text {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+
+  .wa__highlights-card {
+    margin: 0 0 24px 0;
+    padding: 16px 80px;
   }
 }
