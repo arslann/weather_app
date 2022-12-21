@@ -1,5 +1,3 @@
-<!-- Please update value in the {}  -->
-
 <h1 align="center">Weather App</h1>
 
 <div align="center">
@@ -8,13 +6,8 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
-      Demo
-    </a>
-    <span> | </span>
-    <span> | </span>
-    <a href="https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv">
-      Challenge
+    <a href="https://harmonious-duckanoo-a5f277.netlify.app/">
+      Live
     </a>
   </h3>
 </div>
