@@ -6,13 +6,6 @@ export const WeatherProvider = ({ children }) => {
   const [city, setCity] = useState('istanbul');
   const [weather, setWeather] = useState({});
 
-  useEffect(() => {
-    fetchWeather();
-  }, []);
-  useEffect(() => {
-    fetchWeather();
-  }, [city]);
-
   //Fetch weather
   const fetchWeather = async () => {
     const response =
@@ -24,6 +17,10 @@ export const WeatherProvider = ({ children }) => {
     setWeather(data);
     console.log(data);
   };
+
+  useEffect(() => {
+    fetchWeather();
+  }, [city]);
 
   return (
     <WeatherContext.Provider

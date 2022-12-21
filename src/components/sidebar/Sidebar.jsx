@@ -2,7 +2,6 @@ import './sidebar.css';
 import { useState, useContext } from 'react';
 import WeatherContext from '../../context/WeatherContext';
 
-import icon from '../../assets/Shower.png';
 import { GoLocation } from 'react-icons/go';
 
 function Sidebar() {

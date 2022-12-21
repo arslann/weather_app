@@ -3,11 +3,6 @@ import './nextdays.css';
 import { Card } from '../../components';
 import WeatherContext from '../../context/WeatherContext';
 
-import icon from '../../assets/LightRain.png';
-import icon2 from '../../assets/Thunderstorm.png';
-import icon3 from '../../assets/Snow.png';
-import icon4 from '../../assets/Shower.png';
-
 function Nextdays() {
   const { weather } = useContext(WeatherContext);
 
