@@ -137,7 +137,7 @@ h6 {
     padding: 24px 40px;
   }
   .wa__sidebar-icon {
-    margin-top: 48px;
+    margin-top: 36px;
   }
 
   .wa__sidebar-container-weather p:first-child {
@@ -147,11 +147,15 @@ h6 {
   }
 
   .wa__sidebar-container-date {
-    margin-top: 48px;
+    margin-top: 24px;
+  }
+
+  .wa__sidebar-container-location {
+    margin-top: 24px;
   }
 
   .wa__sidebar-container-weather p:nth-child(2) {
-    margin-top: 48px;
+    margin-top: 36px;
 
     font-weight: 600;
     font-size: 2rem;
