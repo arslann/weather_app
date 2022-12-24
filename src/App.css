@@ -136,11 +136,18 @@ h6 {
   .wa__sidebar-filter {
     padding: 24px 40px;
   }
+  .wa__sidebar-icon {
+    margin-top: 48px;
+  }
 
   .wa__sidebar-container-weather p:first-child {
     font-weight: 400;
     font-size: 5rem;
     line-height: 3.75rem;
+  }
+
+  .wa__sidebar-container-date {
+    margin-top: 48px;
   }
 
   .wa__sidebar-container-weather p:nth-child(2) {
@@ -149,6 +156,10 @@ h6 {
     font-weight: 600;
     font-size: 2rem;
     line-height: 36px;
+  }
+
+  .wa__sidebar-container {
+    margin-top: 36px;
   }
 
   .wa__sidebar-icon img {
